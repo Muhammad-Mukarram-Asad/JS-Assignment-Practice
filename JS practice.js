@@ -41,3 +41,23 @@ for(var i = 0 ; i<str.length ; i++)
     }
 }
 console.log(str);
+
+var website = " www.youtube.com";
+website.slice(website.indexOf(".")) -->> .youtube.com
+website.slice(website.indexOf(".")+1)  --> youtube.com
+
+
+var text = "javascript";
+text[0].toUpperCase() + text.slice(1);
+
+var str = "the quick brown fox jumps over the lazy dog.";
+var count = 0;
+
+for(var i = 0 ; i<str.length ; i++)
+{
+   if(str.slice(i, i+3).toLowerCase() == "the")
+   {
+    count+=1;
+   }
+}
+console.log(count);
